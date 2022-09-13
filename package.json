@@ -4,8 +4,8 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "build": "tailwindcss build -i app.css -o dist/main.css --minify",
-    "watch": "tailwindcss build -i app.css -o dist/main.css -w"
+    "build": "tailwindcss build -i app.css -o src/dist/main.css --minify",
+    "watch": "tailwindcss build -i app.css -o src/dist/main.css -w"
   },
   "author": "Danielle Voznyy",
   "license": "MIT",
