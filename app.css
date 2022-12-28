@@ -5,3 +5,12 @@
 a {
     @apply text-purple-300 hover:text-purple-200
 }
+
+.link-button {
+    @apply items-center flex space-x-1 px-3 py-1 rounded-full border border-purple-200
+}
+
+.icon {
+    fill: currentColor;
+    @apply w-5 h-5;
+}
