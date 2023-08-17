@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WebC Example</title>
+    <link webc:keep rel="stylesheet" href="/style.css"/>
+    <style @raw="getBundle('css')" webc:keep></style>
+    <script @raw="getBundle('js')" webc:keep></script>
+</head>
+<body @raw="content" class="bg-zinc-900">
+</body>
+</html>

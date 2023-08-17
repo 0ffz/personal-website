@@ -1,0 +1,5 @@
+<div class="py-3 flex overflow-x-auto space-x-1">
+    <button-github></button-github>
+    <button-resume></button-resume>
+    <button-contact></button-contact>
+</div>
