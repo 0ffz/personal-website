@@ -1,5 +1,6 @@
 ---
 layout: homepage.webc
+title: Danielle Voznyy
 ---
 I am a software developer currently studying mathematics at the University of Toronto Scarborough. I've been leading open source projects and sysadmin work at [Mine in Abyss](https://mineinabyss.com) for over 5 years.
 

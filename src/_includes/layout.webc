@@ -7,6 +7,18 @@
     <style @raw="getBundle('css')" webc:keep></style>
     <script @raw="getBundle('js')" webc:keep></script>
 </head>
-<body @raw="content" class="bg-zinc-900">
+<body class="bg-zinc-900">
+
+<div class="items-center px-4 pt-4 sm:px-12 sm:pt-12 lg:pl-28 lg:pt-36 text-slate-200 h-screen max-w-xl">
+<!--    <div class="flex"></div>-->
+    <div class="py-1 flex overflow-x-auto space-x-1">
+<!--        <h1 @text="title"></h1>-->
+        <h1>Danielle Voznyy</h1>
+    </div>
+    <top-buttons :page="page"></top-buttons>
+    <br>
+
+    <div @raw="content"></div>
+</div>
 </body>
 </html>

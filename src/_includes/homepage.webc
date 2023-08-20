@@ -2,10 +2,11 @@
 layout: layout.webc
 ---
 
-<div class="items-center px-4 pt-4 sm:px-12 sm:pt-12 lg:pl-28 lg:pt-36 text-slate-200 h-screen">
-    <h1 class="text-3xl font-bold text-zinc-50">
-        Danielle Voznyy
-    </h1>
-    <top-buttons></top-buttons>
-    <div @raw="content" class="max-w-xl text-justify space-y-6"></div>
-</div>
+<div @raw="content" class="max-w-xl text-justify space-y-6"></div>
+<br>
+<!--    <h1 class="text-2xl font-bold text-zinc-50">Portfolio</h1>-->
+<!--    <div webc:for="item of portfolio" @text="item"></div>-->
+<!--    <p @text="something"></p>-->
+<!--    <portfolio-card href="https://github.com/MineInAbyss/Geary" @title="Geary" @desc="Some project" src="https://mineinabyss.com/assets/images/render/mia_render.jpg"></portfolio-card>-->
+<!--    <portfolio-card href="https://github.com/MineInAbyss/Geary" @title="Geary" @desc="Some project" src="https://mineinabyss.com/assets/images/render/mia_render.jpg"></portfolio-card>-->
+

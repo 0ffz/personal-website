@@ -1,5 +1,14 @@
-<div class="py-3 flex overflow-x-auto space-x-1">
-    <button-github></button-github>
-    <button-resume></button-resume>
-    <button-contact></button-contact>
+<div class="flex overflow-x-auto space-x-4 items-center">
+    <!--    <logo-button @title="Home" href="/" :page="page"></logo-button>-->
+    <!--    <button-github :page="page"></button-github>-->
+    <!--    <button-projects :page="page"></button-projects>-->
+    <!--    <button-contact :page="page"></button-contact>-->
+    <a webc:for="item of [
+        { name: 'Home', url: '/'},
+        { name: 'Projects', url: '/projects/'},
+        { name: 'Blog', url: '/blog/'},
+        { name: 'Contact', url: 'mailto:contact@offz.me'},
+        { name: 'Resume', url: '/resume.pdf/'},
+    ]" @text="item.name" :href="item.url" :class="item.url == page.url ? 'text-purple-50' : ''">
+    </a>
 </div>

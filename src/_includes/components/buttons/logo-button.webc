@@ -1,4 +1,9 @@
-<a target="_blank" :href="href" class="link-button">
-    <slot>?</slot>
-    <p @text="title">Unknown</p>
+<!--<a :target="target" :href="href" class="items-center flex space-x-1 px-3 py-1 rounded-full border border-purple-200">-->
+<a @attributes :target="target" :href="href" class="items-center flex rounded-full">
+<!--    <div class="fill-current w-5 h-5">-->
+<!--        <slot>?</slot>-->
+<!--    </div>-->
+    <p @text="page.url"></p>
+    <p @text="title" webc:if="'/' + page.url == href" class="text-white"></p>
+    <p @text="title" webc:else></p>
 </a>
