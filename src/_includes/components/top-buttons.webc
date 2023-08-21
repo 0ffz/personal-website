@@ -1,8 +1,4 @@
 <div class="flex overflow-x-auto space-x-4 items-center">
-    <!--    <logo-button @title="Home" href="/" :page="page"></logo-button>-->
-    <!--    <button-github :page="page"></button-github>-->
-    <!--    <button-projects :page="page"></button-projects>-->
-    <!--    <button-contact :page="page"></button-contact>-->
     <a webc:for="item of [
         { name: 'Home', url: '/'},
         { name: 'Projects', url: '/projects/'},
