@@ -1,15 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-a {
-    @apply text-purple-300 hover:text-purple-200
-}
 
-h1 {
-    @apply text-3xl font-bold text-zinc-50
-}
-
-h2 {
-    @apply text-2xl font-bold text-zinc-50
+code, pre {
+    @apply !font-mono;
 }

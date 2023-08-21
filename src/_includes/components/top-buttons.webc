@@ -7,8 +7,9 @@
         { name: 'Home', url: '/'},
         { name: 'Projects', url: '/projects/'},
         { name: 'Blog', url: '/blog/'},
+        { name: 'GitHub', url: 'https://github.com/0ffz' },
         { name: 'Contact', url: 'mailto:contact@offz.me'},
-        { name: 'Resume', url: '/resume.pdf/'},
-    ]" @text="item.name" :href="item.url" :class="item.url == page.url ? 'text-purple-50' : ''">
+    ]" @text="item.name" :href="item.url" :class="item.url == page.url ? '!text-purple-50' : ''">
     </a>
+    <slot></slot>
 </div>

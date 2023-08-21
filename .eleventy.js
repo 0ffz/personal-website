@@ -7,8 +7,10 @@ const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
 // const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 const lodash = require("lodash");
 const {DateTime} = require("luxon");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addCollection("postsByYear", (collection) => {
 		return lodash.chain(collection.getFilteredByTags("blog"))
 			.sortBy((pair) => pair.date)
@@ -26,6 +28,8 @@ module.exports = function(eleventyConfig) {
 		components: "src/_includes/components/**/*.webc",
 
 	});
+
+	eleventyConfig.addPassthroughCopy("src/assets/JetBrainsMono-Regular.woff2");
 
 	eleventyConfig.addPassthroughCopy("src/style.css")
 	eleventyConfig.addWatchTarget('./src/_includes/styles/tailwind.css');
