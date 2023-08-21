@@ -4,7 +4,6 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const bundlerPlugin = require("@11ty/eleventy-plugin-bundle");
-// const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
 const lodash = require("lodash");
 const {DateTime} = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
