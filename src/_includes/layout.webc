@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <template webc:type="11ty" 11ty:type="liquid">
+        {% if title == 'Danielle Voznyy' %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>{{ title }} — Danielle Voznyy</title>
+        {% endif %}
+    </template>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link webc:keep rel="stylesheet" href="/style.css"/>
+    <style @raw="getBundle('css')" webc:keep></style>
+    <script @raw="getBundle('js')" webc:keep></script>
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link webc:keep href="https://raw.githubusercontent.com/PrismJS/prism-themes/master/themes/prism-cb.css" rel="stylesheet">-->
+    <link webc:keep href="https://unpkg.com/prismjs@1.20.0/themes/prism-tomorrow.css" rel="stylesheet">
+</head>
+
+<body class="bg-zinc-900 min-h-screen ">
+<div class="prose prose-zinc dark:prose-invert max-w-none
+            prose-a:text-purple-300 prose-a:no-underline hover:prose-a:text-purple-200
+            prose-h2:mt-8 prose-h3:mt-6 prose-h4:mt-4">
+    <template webc:type="11ty" 11ty:type="liquid">
+        <div class="items-center h-auto px-4 pt-4 md:pt-8 md:px-8 lg:pt-20 xl:pt-36 text-slate-200 mx-auto max-w-screen-lg">
+            <div class="{% if smallPage %} max-w-xl {% else %} max-w-screen-lg {% endif %}">
+                <h1 @text="title" class="mb-2"></h1>
+                <top-buttons :page="page" class="mb-2"></top-buttons>
+                <div class="pt-2" webc:if="desc != null || date != null">
+                    <p webc:if="desc != null" class="text-zinc-400 m-0"><i>{{ desc }}</i></p>
+                    <p webc:if="date != null" class="text-zinc-400 m-0">{{ date | toUTCString | date: "%B %d, %Y" }} —
+                        Danielle Voznyy</p>
+                </div>
+                <hr class="my-5">
+                <article @raw="content"></article>
+                <div class="md:h-36" webc:if="showFooter != 'false'"></div>
+            </div>
+        </div>
+    </template>
+</div>
+</body>
+</html>

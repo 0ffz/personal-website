@@ -1,0 +1,18 @@
+---
+layout: layout.webc
+title: Blog
+eleventyImport:
+  collections: ["blog"]
+years:
+  - 2023
+desc: This feels a little empty
+---
+
+{%- for year in collections.postsByYear -%}
+    <h2>{{ year[0] }}</h2>
+    <ul>
+    {%- for post in year[1] -%}
+      <li><a href="{{ post.url }}">{{ post.data.title }}</a> - {{ post.data.date | toUTCString | date: "%b %d" }}</li>
+    {%- endfor -%}
+    </ul>
+{%- endfor -%}
