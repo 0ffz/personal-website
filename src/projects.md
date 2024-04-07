@@ -27,4 +27,4 @@ I've worked on a few projects involving more frontend work:
 
 - [Clicky](https://github.com/0ffz/Clicky), an online vote room I made for a professor that wanted students to be able to answer impromptu questions in class. It's built on Django and the frontend is mostly pure HTML with skeleton CSS applied.
 - [Sports venue manager](https://github.com/0ffz/CSCB07-final) was a school project that introduced me to Firebase and modern Android app architecture. I used a lot of newer Java-specific Android standards, rather than Kotlin, which ironically I've used for anything but Android.
-- [*This* website](https://offz.me) is built with [Eleventy](https://www.11ty.dev/), primarily using their [WebC](https://www.11ty.dev/docs/languages/webc/) templating language to split things into reusable components without any client side JavaScript required.
+- [*This* website](https://dvyy.me) is built with [Eleventy](https://www.11ty.dev/), primarily using their [WebC](https://www.11ty.dev/docs/languages/webc/) templating language to split things into reusable components without any client side JavaScript required.
